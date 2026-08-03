@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Tech Blumenau - Inscrição</title>
+</head>
+
+<body>
+    <header>
+        <h1>Semana Tech Blumenau</h1>
+
+        <nav>
+            <a href="index.html">O Evento</a>
+            <a href="inscricao.html">Inscrição</a>
+            <a href="local.html">Local</a>
+            <a href="index.html#programacao">Programação</a>
+        </nav>
+
+        <h2>Faça sua inscrição</h2>
+
+
+    </header>
+
+    <main>
+        <section id="inscricao">
+            <form>
+                <p>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" required maxlength="80">
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="seuemail@hotmail.com">
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" required placeholder="(47)9 92587577" pattern="[0-9]{11}">
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" min="14" max="99" required>
+                </p>
+
+                <p>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data" required min="1927-08-03" max="2012-08-03">
+                </p>
+
+                <p>
+                    <label for="area">Área de interesse:</label>
+                    <select id="area">
+                        <option>Front-end</option>
+                        <option>Back-end</option>
+                        <option>Dados</option>
+                        <option>Design</option>
+                        <option>Ainda não sei</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="obs">Precisa de acessibilidade?</label>
+                    <textarea id="obs" maxlength="200"></textarea>
+                </p>
+
+                <button>Confirmar inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Semana Tech Blumenau - Blumenau, SC</p>
+    </footer>
+
+</body>
+
+</html>
