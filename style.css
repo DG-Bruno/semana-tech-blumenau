@@ -4,7 +4,9 @@
     --color-title: #F5F7FA;
     --color-text: #C5CBD6;
     --color-hover-links: #A72DFF;
+
     --font-title: 'Montserrat', sans-serif;
+    --font-text: 'Inter', sans-serif;
 }
 
 * {
