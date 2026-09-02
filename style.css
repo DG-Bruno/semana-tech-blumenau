@@ -1,0 +1,53 @@
+:root {
+    --color-background: #000818;
+    --color-text: #B8B8C0;
+    --color-border: #182438;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+h1 {
+
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main p {
+
+}
+
+.programacao h3 {
+    text-align: center;
+    width: 70%;
+}
+
+table {
+    border: 1px solid var(--color-border);
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 1px solid var(--color-border);
+    padding: 12px 16px;
+}
+
+th {
+    background-color: #081028;
+    color: #7A19ED;
+}
