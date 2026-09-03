@@ -1,6 +1,10 @@
 :root {
     --color-background: #000818;
+    --color-background-02: #081028;
     --color-text: #B8B8C0;
+    --color-text-primary: #F8F8F8;
+    --color-text-destaque: #7A19ED;
+    --color-hover: #6C3EFC;
     --color-border: #182438;
 }
 
@@ -11,15 +15,110 @@
 body {
     background-color: var(--color-background);
     color: var(--color-text);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner {
+    position: relative;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top right,
+        rgb(0, 8, 24),
+        rgba(0, 8, 24, 0.767),
+        rgba(0, 8, 24, 0),
+        rgba(0, 8, 24, 0)
+    ),
+    linear-gradient(
+        to right,
+        rgb(0, 8, 24),
+        rgba(0, 8, 24, 0.733),
+        rgba(0, 8, 24, 0),
+        rgba(0, 8, 24, 0)
+    );
+}
+
+nav {
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    text-align: end;
+    padding: 32px;
 }
 
 nav a {
     text-decoration: none;
     color: var(--color-text);
+    padding: 12px 24px;
+    margin-right: 16px;
+    font-weight: 700;
+}
+
+nav a:not(.last-nav):hover {
+    color: var(--color-hover);
+}
+
+.last-nav {
+    color: var(--color-text-primary);
+    background-color: var(--color-text-destaque);
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-right: 36px;
+}
+
+.last-nav:hover {
+    background-color: var(--color-hover);
+}
+
+.container-title {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    align-items: center;
+    margin-left: 24px;margin-top: 0;
+}
+
+i {
+    color: var(--color-text-destaque);
+    font-size: 50px;
+}
+
+.style-semana {
+    font-size: medium;
+}
+
+.style-tech {
+    font-size: larger;
+}
+
+.style-blumenau {
+    font-size: small;
+}
+
+.style-2026 {
+    color: var(--color-text-destaque);
+    font-size: small;
 }
 
 h1 {
-
+    text-transform: uppercase;
 }
 
 main {
@@ -28,30 +127,74 @@ main {
 }
 
 main p {
-
+    letter-spacing: 0.2px;
 }
 
-.programacao h3 {
-    text-align: center;
-    width: 70%;
+.style-data,
+.style-local {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 table {
     border: 1px solid var(--color-border);
-    margin: 0 auto;
+    border-collapse: collapse;
 }
 
 th,
 td {
     border: 1px solid var(--color-border);
-    padding: 12px 16px;
+    padding: 12px 24px;
+    
 }
 
 th {
-    background-color: #081028;
-    color: #7A19ED;
+    background-color: var(--color-background-02);
+    color: var(--color-text-destaque);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
 }
 
 td {
     
+}
+
+.inscricao {
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-text-destaque);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.inscricao:hover {
+    background-color: var(--color-hover);
+}
+
+.inicio {
+    text-decoration: none;
+    color: var(--color-text-destaque);
+}
+
+.inicio:hover {
+    color: var(--color-hover);
+}
+
+footer {
+    border-top: 1px solid var(--color-border);
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.links a:hover {
+    color: var(--color-hover);
+}
+
+input,
+textarea,
+select {
+
 }
