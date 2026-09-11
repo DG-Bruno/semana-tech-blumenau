@@ -159,6 +159,7 @@ main {
 h3 {
     color: var(--color-text-primary);
     text-transform: uppercase;
+    font-size: 24px;
 }
 
 main p {
@@ -170,6 +171,9 @@ main p {
     margin: 0 auto;
     margin-top: 36px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .card-informacoes {
@@ -213,16 +217,34 @@ main p {
     font-size: 24px;
 }
 
+.container-programacao {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-programacao h3 {
+    width: 90%;
+    margin: 0 auto 20px;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 table {
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid var(--color-border);
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th,
 td {
     border: 1px solid var(--color-border);
     padding: 12px 24px;
-    
 }
 
 th {
@@ -230,10 +252,30 @@ th {
     color: var(--color-text-destaque);
     text-transform: uppercase;
     letter-spacing: 0.2px;
+    border: 0;
+    text-align: left;
 }
 
 td {
-    
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    color: var(--color-text-destaque);
+    text-align: center;
+}
+
+td i {
+    font-size: 20px;
+    width: 8px;
+    margin-right: 24px;
+}
+
+tfoot {
+    text-align: center;
 }
 
 .inscricao {
